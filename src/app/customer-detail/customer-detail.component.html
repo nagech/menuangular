@@ -1,0 +1,14 @@
+
+
+<div *ngIf="customer$ | async as customer">
+  <h2><span class="badge badge-light ">{{customer.firstname}}</span></h2>
+  <ul>
+    <li>Id: {{customer.id}}</li>
+    <li>Firstname: {{customer.firstname}}</li>
+    <li>Lastname: {{customer.lastname}}</li>
+    <li>Age: {{customer.age}}</li>
+    <li>Nationality: {{customer.nationality}}</li>
+  </ul>
+</div>
+
+<button type="button" class="btn btn-dark" (click)="goBack()">< Back</button>

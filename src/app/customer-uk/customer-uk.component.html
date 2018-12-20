@@ -1,0 +1,3 @@
+<div *ngFor="let cust of customers$ | async">
+    <a [routerLink]="['/customers', cust.id]"><span class="badge badge-light badge-primary">{{cust.id}}</span> {{ cust.firstname }}</a>
+</div>
